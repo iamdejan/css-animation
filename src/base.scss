@@ -4,3 +4,16 @@
   --clr-rgba: #ffe3e6;
   --clr-accent: #f43f70;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+}
