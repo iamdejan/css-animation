@@ -1,19 +1,31 @@
-// style.scss
-
-$primary-color: #3498db;
-$secondary-color: #e74c3c;
-
 .container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: lighten($primary-color, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  h1 {
-    color: $primary-color;
-  }
+.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: var(--clr-accent);
+  background-color: var(--clr-rgba);
+  border: 10px solid var(--clr-accent);
+  border-radius: 5px;
 
-  p {
-    color: $secondary-color;
-  }
+  // transition-property: transform;
+  // transition-duration: 0.3s;
+  // transition-timing-function: ease;
+  // transition-delay: 0s;
+
+  // transition: transform 0.3s, background-color 0.3s, color 0.3s;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
 }
